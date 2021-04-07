@@ -1,5 +1,5 @@
 const calcium_value_milk = 120;
-const calcium_value_cream = 88;
+const calcium_value_cream = 99;
 const calcium_value_cottageCheese = 99;
 const calcium_value_plainYogurt = 170;
 const calcium_value_friutYogurt = 225;
@@ -29,18 +29,19 @@ mleko_32=118,
 */
 function calc() {
     const value = document.getElementById("input-section_input-text").value;
-    var template = 100*value;
+    var template = 100 * value;
 
-    document.getElementById("product-result-milk").innerHTML = Math.round(template/calcium_value_milk);
-    document.getElementById("product-result-cream").innerHTML = Math.round(template/calcium_value_cream);
-    document.getElementById("product-result-cottagecheese").innerHTML = Math.round(template/calcium_value_cottageCheese);
-    document.getElementById("product-result-plainYogurt").innerHTML = Math.round(template/calcium_value_plainYogurt);
-    document.getElementById("product-result-friutYogurt").innerHTML = Math.round(template/calcium_value_friutYogurt);
-    document.getElementById("product-result-kefir").innerHTML = Math.round(template/calcium_value_kefir);
-    document.getElementById("product-result-spinach").innerHTML = Math.round(template/calcium_value_spinach);
-    document.getElementById("product-result-feta").innerHTML = Math.round(template/calcium_value_feta);
-    document.getElementById("product-result-gouda").innerHTML = Math.round(template/calcium_value_gouda);
-    document.getElementById("product-result-vanillaIcecream").innerHTML = Math.round(template/calcium_value_vanillaIcecream);
-    document.getElementById("product-result-chcocolateIcecream").innerHTML = Math.round(template/calcium_value_chcocolateIcecream);
-    document.getElementById("product-result-nutella").innerHTML = Math.round(template/calcium_value_nutella);
+    document.getElementById("product-result-milk").innerHTML = Math.round(template / calcium_value_milk);
+    document.getElementById("product-result-cream").innerHTML = Math.round(template / calcium_value_cream);
+    document.getElementById("product-result-cottagecheese").innerHTML = Math.round(template / calcium_value_cottageCheese);
+    document.getElementById("product-result-plainYogurt").innerHTML = Math.round(template / calcium_value_plainYogurt);
+    document.getElementById("product-result-friutYogurt").innerHTML = Math.round(template / calcium_value_friutYogurt);
+    document.getElementById("product-result-kefir").innerHTML = Math.round(template / calcium_value_kefir);
+    document.getElementById("product-result-spinach").innerHTML = Math.round(template / calcium_value_spinach);
+    document.getElementById("product-result-feta").innerHTML = Math.round(template / calcium_value_feta);
+    document.getElementById("product-result-gouda").innerHTML = Math.round(template / calcium_value_gouda);
+    document.getElementById("product-result-vanillaIcecream").innerHTML = Math.round(template / calcium_value_vanillaIcecream);
+    document.getElementById("product-result-chcocolateIcecream").innerHTML = Math.round(template / calcium_value_chcocolateIcecream);
+    document.getElementById("product-result-nutella").innerHTML = Math.round(template / calcium_value_nutella);
 }
+
