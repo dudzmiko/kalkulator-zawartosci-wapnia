@@ -90,9 +90,6 @@ header {
 
     margin: 20px;
     .product-name {
-      /*position: absolute;
-      left: 0;*/
-
       padding: 10px;
 
       display: flex;
@@ -112,9 +109,6 @@ header {
       color: $color-text;
     }
     .product-result {
-      /*position: absolute;
-      right: 0;*/
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -131,8 +125,19 @@ header {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 576px) {
   .output-section {
-    padding: 0;
+    padding: 0px;
+
+    .product-box {
+      height: 100px;
+      width: 100vw;
+
+      margin: 10px 0 10px 0;
+
+      .product-name {
+        width: calc(100vw - 100px);
+      }
+    }
   }
 }
