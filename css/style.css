@@ -29,6 +29,7 @@ header {
 header h1 {
   font-family: "Ubuntu";
   color: #ffffff;
+  font-size: 2rem;
 }
 
 .input-section {
@@ -158,6 +159,9 @@ header h1 {
 }
 
 @media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
   .output-section {
     padding: 0px;
   }

@@ -23,6 +23,7 @@ header {
   h1 {
     font-family: "Ubuntu";
     color: $color-text;
+    font-size: 2rem;
   }
 }
 
@@ -126,6 +127,12 @@ header {
 }
 
 @media (max-width: 576px) {
+  header {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
   .output-section {
     padding: 0px;
 
