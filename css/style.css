@@ -109,14 +109,17 @@ header h1 {
 
 .output-section .product-box {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100px;
   width: 300px;
   margin: 20px;
 }
 
 .output-section .product-box .product-name {
-  position: absolute;
-  left: 0;
+  /*position: absolute;
+      left: 0;*/
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,8 +141,8 @@ header h1 {
 }
 
 .output-section .product-box .product-result {
-  position: absolute;
-  right: 0;
+  /*position: absolute;
+      right: 0;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,5 +159,11 @@ header h1 {
   font-weight: 700;
   font-size: 40px;
   color: #e9c867;
+}
+
+@media (max-width: 450px) {
+  .output-section {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
