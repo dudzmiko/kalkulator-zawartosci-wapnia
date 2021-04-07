@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+
+    <title>Kalkulator zawartości wapnia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator zawartości wapnia</h1>
+    </header>
+    <main>
+      <div class="input-section">
+        <input
+          id="input-section_input-text"
+          type="text"
+          name="input-text"
+          placeholder="Wpisz podaż wapnia"
+        />
+        <input
+          id="input-section_input-button"
+          type="button"
+          name="input-button"
+          value="Przelicz"
+          onclick="calc()"
+        />
+      </div>
+      <div class="output-section">
+        <div class="product-box">
+          <div class="product-name" id="product-name-milk">Mleko</div>
+          <div class="product-result" id="product-result-milk"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Śmietana</div>
+          <div class="product-result" id="product-result-cream"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Ser biały</div>
+          <div class="product-result" id="product-result-cottagecheese"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Jogurt naturalny</div>
+          <div class="product-result" id="product-result-plainYogurt"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Jogurt owocowy</div>
+          <div class="product-result" id="product-result-friutYogurt"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Kefir</div>
+          <div class="product-result" id="product-result-kefir"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Szpinak</div>
+          <div class="product-result" id="product-result-spinach"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Ser feta</div>
+          <div class="product-result" id="product-result-feta"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Ser gouda</div>
+          <div class="product-result" id="product-result-gouda"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Lody waniliowe</div>
+          <div class="product-result" id="product-result-vanillaIcecream"></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Lody czekoladowe</div>
+          <div
+            class="product-result"
+            id="product-result-chcocolateIcecream"
+          ></div>
+        </div>
+        <div class="product-box">
+          <div class="product-name">Nutella</div>
+          <div class="product-result" id="product-result-nutella"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

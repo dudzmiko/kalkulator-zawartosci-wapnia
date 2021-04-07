@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #171520;
+}
+
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #262335;
+}
+
+header h1 {
+  font-family: "Ubuntu";
+  color: #ffffff;
+}
+
+.input-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+}
+
+.input-section #input-section_input-text {
+  height: 50px;
+  width: 150px;
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  border: 0;
+  outline: 0;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.input-section #input-section_input-text::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.input-section #input-section_input-text:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.input-section #input-section_input-text::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.input-section #input-section_input-text::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.input-section #input-section_input-button {
+  height: 50px;
+  width: 100px;
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.input-section #input-section_input-button:hover {
+  background-color: #e9c867;
+  color: #ffffff;
+}
+
+.output-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 100px 0 100px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.output-section .product-box {
+  position: relative;
+  height: 100px;
+  width: 300px;
+  margin: 20px;
+}
+
+.output-section .product-box .product-name {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 200px;
+  background-color: #262335;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.output-section .product-box .product-result {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100px;
+  background-color: #241b2f;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 40px;
+  color: #e9c867;
+}
+/*# sourceMappingURL=style.css.map */
