@@ -8,22 +8,60 @@
 }
 
 body {
-  background-color: $color-body;
+  background-color: #112540;
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+  color: $color-text;
+}
+
+li {
+  list-style: none;
+  margin: 0 30px 0 30px;
 }
 
 header {
-  height: 100px;
+  height: 80px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: $color-third;
+  background-color: #102037;
+  border-bottom: 2px solid #163154;
+  .logo {
+    position: absolute;
+    left: 0;
 
-  h1 {
-    font-family: "Ubuntu";
-    color: $color-text;
-    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 400px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+
+    h1 {
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      color: #9492a8;
+      font-size: 1em;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 500px;
   }
 }
 
@@ -69,7 +107,7 @@ header {
     transition: all 0.2s ease;
   }
   #input-section_input-button:hover {
-    background-color: $color-gold;
+    background-color: #19b396;
     color: $color-text;
   }
 }
@@ -121,7 +159,7 @@ header {
       font-family: "Ubuntu";
       font-weight: 700;
       font-size: 40px;
-      color: $color-gold;
+      color: #19b396;
     }
   }
 }
@@ -130,6 +168,12 @@ header {
   header {
     h1 {
       font-size: 1rem;
+    }
+
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 

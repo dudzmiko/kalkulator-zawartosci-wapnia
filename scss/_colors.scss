@@ -1,9 +1,28 @@
-$color-first: #171520;
-$color-second: #241b2f;
-$color-third: #262335;
+$color-green1: #27d545;
+$color-green2: #10983d;
+$color-green3: #00602d;
+$color-green4: #003820;
+
+$color-gray1: #161b22;
+$color-gray2: #0d1117;
+
+$color-blue: #1f6feb;
+
+$color-orange: #f9826c;
+
+$color-first: #102037;
+$color-second: #102037;
+$color-third: #0c192b;
 
 $color-gold: #e9c867;
 $color-red: #f97e72;
 
-$color-body: $color-first;
+$color-body: $color-gray2;
 $color-text: #ffffff;
+
+$lineColor: lighten(#112540, 5);
+$bodyGradient: linear-gradient(
+  140deg,
+  lighten(#112540, 0) 0%,
+  darken(#112540, 0) 100%
+);
