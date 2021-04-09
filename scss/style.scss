@@ -190,6 +190,10 @@ header {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+
+      img {
+        display: none;
+      }
       h1 {
         font-size: 0.7rem;
       }
