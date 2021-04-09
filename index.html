@@ -27,21 +27,25 @@
     </header>
     <main>
       <div class="input-section">
-        <input
-          id="input-section_input-text"
-          type="number"
-          min="1"
-          max="5000"
-          name="input-text"
-          placeholder="Wpisz podaż wapnia"
-        />
-        <input
-          id="input-section_input-button"
-          type="button"
-          name="input-button"
-          value="Przelicz"
-          onclick="calc()"
-        />
+        <span>W polu poniżej wpisz podaż wapnia:</span>
+        <div class="input-box">
+          <input
+            class="input-number"
+            id="input-section_input-text"
+            type="number"
+            min="1"
+            max="5000"
+            name="input-text"
+          />
+          <input
+            class="input-button"
+            id="input-section_input-button"
+            type="button"
+            name="input-button"
+            value="Przelicz"
+            onclick="calc()"
+          />
+        </div>
       </div>
       <div class="output-section">
         <div class="product-box">

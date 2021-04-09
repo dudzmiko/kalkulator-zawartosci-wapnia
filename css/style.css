@@ -45,8 +45,9 @@ header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -63,7 +64,7 @@ header .logo h1 {
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   color: #9492a8;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 header ul {
@@ -84,6 +85,10 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -93,46 +98,46 @@ header ul {
   height: 150px;
 }
 
-.input-section #input-section_input-text {
+.input-section span {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.input-section .input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-section .input-box .input-number {
   height: 50px;
   width: 150px;
   padding: 10px;
   margin: 0 20px 0 20px;
   background-color: #163154;
   border-radius: 10px;
-  border: 0;
+  border: 2px solid transparent;
   outline: 0;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
   color: #fff;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
-.input-section #input-section_input-text::-webkit-input-placeholder {
-  text-align: center;
-  font-weight: 300;
-  font-size: 13px;
+.input-section .input-box .input-number:hover,
+.input-section .input-box .input-number:focus {
+  border: 2px solid #19b396;
 }
 
-.input-section #input-section_input-text:-ms-input-placeholder {
-  text-align: center;
-  font-weight: 300;
-  font-size: 13px;
-}
-
-.input-section #input-section_input-text::-ms-input-placeholder {
-  text-align: center;
-  font-weight: 300;
-  font-size: 13px;
-}
-
-.input-section #input-section_input-text::placeholder {
-  text-align: center;
-  font-weight: 300;
-  font-size: 13px;
-}
-
-.input-section #input-section_input-button {
+.input-section .input-box .input-button {
   height: 50px;
   width: 150px;
   border-radius: 10px;
@@ -151,7 +156,7 @@ header ul {
   transition: all 0.2s 0s;
 }
 
-.input-section #input-section_input-button:active {
+.input-section .input-box .input-button:active {
   margin-top: 12px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -221,14 +226,14 @@ header ul {
 }
 
 @media (max-width: 575.98px) {
-  header h1 {
-    font-size: 1rem;
-  }
   header .logo {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  header .logo h1 {
+    font-size: 0.7rem;
   }
   .output-section {
     padding: 0px;
