@@ -102,7 +102,6 @@ header ul {
   position: absolute;
   top: 20px;
   color: #ffffff;
-  margin-bottom: 10px;
 }
 
 .input-section .input-box {
@@ -119,7 +118,7 @@ header ul {
 
 .input-section .input-box .input-number {
   height: 50px;
-  width: 150px;
+  width: 120px;
   padding: 10px;
   margin: 0 20px 0 20px;
   background-color: #163154;
@@ -141,7 +140,7 @@ header ul {
 
 .input-section .input-box .input-button {
   height: 50px;
-  width: 150px;
+  width: 120px;
   border-radius: 10px;
   background-color: #19b396;
   -webkit-box-shadow: 0px 8px 0px 0px #09121f;

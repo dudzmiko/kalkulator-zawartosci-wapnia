@@ -78,8 +78,6 @@ header {
     position: absolute;
     top: 20px;
     color: $color-text;
-
-    margin-bottom: 10px;
   }
   .input-box {
     display: flex;
@@ -87,7 +85,7 @@ header {
     align-items: center;
     .input-number {
       height: 50px;
-      width: 150px;
+      width: 120px;
 
       padding: 10px;
       margin: 0 20px 0 20px;
@@ -112,7 +110,7 @@ header {
     }
     .input-button {
       height: 50px;
-      width: 150px;
+      width: 120px;
       border-radius: 10px;
       background-color: #19b396;
       box-shadow: 0px 8px 0px 0px #09121f;
