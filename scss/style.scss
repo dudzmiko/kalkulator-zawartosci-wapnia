@@ -1,3 +1,4 @@
+@import "_placeholders.scss";
 @import "_colors.scss";
 @import "_fonts.scss";
 
@@ -16,12 +17,12 @@ header {
   height: 80px;
   width: 100vw;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center-center;
 
   background-color: #102037;
+
   border-bottom: 2px solid #163154;
+
   .logo {
     position: absolute;
     left: 0;
@@ -32,6 +33,7 @@ header {
 
     height: 80px;
     width: 400px;
+
     img {
       height: 50px;
       width: 50px;
@@ -46,15 +48,11 @@ header {
   }
 }
 
+//INPUT SECTION START
 .input-section {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   height: 150px;
+  @extend %flex-center-center;
 
   #one {
     position: absolute;
@@ -128,7 +126,9 @@ header {
     }
   }
 }
+//INPUT SECTION END
 
+//OUTPUT SECTION
 .output-section {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +180,9 @@ header {
     }
   }
 }
+//OUTPUT SECTION END
 
+//MEDIA QUERIES START
 @media (max-width: 575.98px) {
   header {
     .logo {
@@ -195,7 +197,7 @@ header {
       }
 
       h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
   }
@@ -220,3 +222,4 @@ header {
     }
   }
 }
+//MEDIA QUERIES END
