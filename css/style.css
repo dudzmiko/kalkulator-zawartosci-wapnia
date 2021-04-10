@@ -14,18 +14,9 @@ body {
   font-family: "Montserrat";
 }
 
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-li {
-  list-style: none;
-  margin: 0 30px 0 30px;
-}
-
 header {
   height: 80px;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,20 +57,6 @@ header .logo h1 {
   font-size: 1rem;
 }
 
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 500px;
-}
-
 .input-section {
   position: relative;
   display: -webkit-box;
@@ -98,19 +75,27 @@ header ul {
   height: 150px;
 }
 
-.input-section span {
+.input-section #one {
   position: absolute;
   top: 20px;
+  font-size: 1rem;
   color: #ffffff;
+}
+
+.input-section #two {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1rem;
+  color: #9492a8;
 }
 
 .input-section .input-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -120,12 +105,12 @@ header ul {
   height: 50px;
   width: 120px;
   padding: 10px;
-  margin: 0 20px 0 20px;
+  margin-right: 10px;
   background-color: #163154;
   border-radius: 10px;
   border: 2px solid transparent;
   outline: 0;
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-weight: 700;
   font-size: 20px;
   color: #fff;
@@ -141,6 +126,7 @@ header ul {
 .input-section .input-box .input-button {
   height: 50px;
   width: 120px;
+  margin-left: 10px;
   border-radius: 10px;
   background-color: #19b396;
   -webkit-box-shadow: 0px 8px 0px 0px #09121f;
@@ -153,8 +139,8 @@ header ul {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  -webkit-transition: all 0.2s 0s;
-  transition: all 0.2s 0s;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .input-section .input-box .input-button:active {
@@ -232,12 +218,16 @@ header ul {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    width: 100%;
   }
   header .logo img {
     display: none;
   }
   header .logo h1 {
-    font-size: 0.7rem;
+    font-size: 1rem;
+  }
+  .input-section #one {
+    font-size: 0.8rem;
   }
   .output-section {
     padding: 0px;
