@@ -1,4 +1,4 @@
-# Kalkulator zawartości wapnia w produktach spożywczych 🥪
+# Kalkulator zawartości wapnia 🥪
 
 📧 Kontakt: dudzmiko@gmail.com
 
