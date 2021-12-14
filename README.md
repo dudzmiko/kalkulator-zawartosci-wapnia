@@ -1,3 +1,5 @@
+<img src="svg/hamburger.svg" height="100" align="right" />
+
 # Kalkulator zawartości wapnia 🥪
 
 📧 Kontakt: dudzmiko@gmail.com
