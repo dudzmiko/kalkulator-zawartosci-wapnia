@@ -1,4 +1,4 @@
-<img src="svg/hamburger.svg" height="100" align="right" />
+<img src="svg/sandwitch.svg" height="100" align="right" />
 
 # Kalkulator zawartości wapnia 🥪
 
